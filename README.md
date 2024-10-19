@@ -1,9 +1,22 @@
 # Proyecto_Agencia
-Instalar paquete mysql=>
- - python --version
- - pip install --upgrade pip
- - pip install mysql-connector-python==3.12.3
- - python -m venv myenv
- - myenv\Scripts\activate
- - pip install mysql-connector-python
- - pip list
+- pip install django
+- pip install mysql-connector-python
+- pip install mysqlclient
+- pip install django djangorestframework
+  
+# Crear proyecto
+- django-admin startproject nombredelproyecto
+- cd nombredelproyecto
+- python manage.py startapp nombredelaApp
+
+## Realizar las migraciones
+
+- python manage.py inspectdb > viajes/models.py
+- python manage.py migrate
+- python manage.py makemigrations
+
+## Crear maquina Virtual (para Jarinson)
+- python -m venv env
+- env\Scripts\activate
+
+
